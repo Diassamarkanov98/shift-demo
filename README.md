@@ -61,8 +61,8 @@ Java-приложение для обработки входных файлов,
 ```
 ### Ссылки на библиотеки:
 
-- JUnit 5 - фреймворк для модульного тестирования
-- JUnit Platform - платформа для запуска тестов
+- [JUnit 5](https://junit.org/) - фреймворк для модульного тестирования
+- [JUnit Platform](https://docs.junit.org/current/api/org.junit.platform.suite/module-summary.html) - платформа для запуска тестов
 
 ## Установка
 
