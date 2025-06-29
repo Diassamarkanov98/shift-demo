@@ -19,10 +19,50 @@ Java-приложение для обработки входных файлов,
     - Добавление префикса к выходным файлам (-p)
     - Режим дополнения файлов (-a)
 
-## Требования
+## Технические характеристики
 
-- Java 11 или выше
-- Maven 3.6.0 или выше (для сборки)
+### Требования
+- **Java**: версия 11 или выше ([скачать JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html))
+
+### Система сборки
+- **Maven**: версия 3.6.0 или выше ([официальный сайт](https://maven.apache.org/))
+
+### Зависимости
+
+Список используемых сторонних библиотек:
+
+```xml
+<dependencies>
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-api</artifactId>
+    <version>5.8.2</version>
+    <scope>test</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-engine</artifactId>
+    <version>5.8.2</version>
+    <scope>test</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-params</artifactId>
+    <version>5.8.2</version>
+    <scope>test</scope>
+  </dependency>
+  <dependency>
+    <groupId>org.junit.platform</groupId>
+    <artifactId>junit-platform-suite</artifactId>
+    <version>1.8.2</version>
+    <scope>test</scope>
+  </dependency>
+</dependencies>
+```
+### Ссылки на библиотеки:
+
+- JUnit 5 - фреймворк для модульного тестирования
+- JUnit Platform - платформа для запуска тестов
 
 ## Установка
 
