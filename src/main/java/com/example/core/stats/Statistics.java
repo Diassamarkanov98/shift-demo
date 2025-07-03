@@ -1,5 +1,8 @@
 package com.example.core.stats;
 
+import lombok.Getter;
+
+@Getter
 public class Statistics {
     private int integerCount;
     private long integerMin;

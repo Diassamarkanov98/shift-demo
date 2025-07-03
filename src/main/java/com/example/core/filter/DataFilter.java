@@ -2,10 +2,12 @@ package com.example.core.filter;
 
 import com.example.core.model.DataType;
 import com.example.core.stats.Statistics;
+import lombok.Getter;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
 public class DataFilter {
     private final List<String> integers = new ArrayList<>();
     private final List<String> floats = new ArrayList<>();
@@ -18,31 +20,19 @@ public class DataFilter {
 
             DataType type = TypeDetector.detectType(line);
             switch (type) {
-                case INTEGER:
+                case INTEGER -> {
                     integers.add(line);
                     stats.collectIntegerStats(line);
-                    break;
-                case FLOAT:
+                }
+                case FLOAT -> {
                     floats.add(line);
                     stats.collectFloatStats(line);
-                    break;
-                case STRING:
+                }
+                case STRING -> {
                     strings.add(line);
                     stats.collectStringStats(line);
-                    break;
+                }
             }
         }
-    }
-
-    public List<String> getIntegers() {
-        return integers;
-    }
-
-    public List<String> getFloats() {
-        return floats;
-    }
-
-    public List<String> getStrings() {
-        return strings;
     }
 }
