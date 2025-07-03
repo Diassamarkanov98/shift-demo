@@ -4,16 +4,19 @@ import lombok.Getter;
 
 @Getter
 public class Statistics {
+    @Getter
     private int integerCount;
     private long integerMin;
     private long integerMax;
     private long integerSum;
 
+    @Getter
     private int floatCount;
     private double floatMin;
     private double floatMax;
     private double floatSum;
 
+    @Getter
     private int stringCount;
     private int stringMinLength;
     private int stringMaxLength;
@@ -57,18 +60,6 @@ public class Statistics {
             if (length < stringMinLength) stringMinLength = length;
             if (length > stringMaxLength) stringMaxLength = length;
         }
-    }
-
-    public int getIntegerCount() {
-        return integerCount;
-    }
-
-    public int getFloatCount() {
-        return floatCount;
-    }
-
-    public int getStringCount() {
-        return stringCount;
     }
 
     public void printFullStatistics() {
